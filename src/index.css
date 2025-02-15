@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --primary-color: #4a90e2; /* Header background */
+  --secondary-color: #e2e8f0; /* Form & stats background */
+  --accent-color: #e74c3c; /* Buttons & accents */
+  --input-bg: #ffffff; /* Default input/select background */
+  --list-bg: #f1f5f9; /* List background */
+  --text-color: #333333; /* Main text color */
+}
 
 * {
   margin: 0;
@@ -12,8 +21,8 @@ html {
 
 body {
   font-size: 2.4rem;
-  color: #2d2d2d;
-  font-family: "Inter";
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
@@ -26,18 +35,19 @@ body {
 
 h1 {
   text-align: center;
-  background-color: #8fcb9b;
-  font-family: "Quicksand";
+  background-color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
   font-size: 8rem;
   text-transform: uppercase;
   font-weight: 700;
   word-spacing: 30px;
   letter-spacing: -3px;
   padding: 2.4rem 0;
+  color: var(--input-bg); /* white text for contrast */
 }
 
 .add-form {
-  background-color: #d1b29e;
+  background-color: var(--secondary-color);
   padding: 2.8rem 0;
   display: flex;
   align-items: center;
@@ -54,8 +64,8 @@ h3 {
 button,
 select,
 input {
-  background-color: #c6e7f2;
-  color: #2d2d2d;
+  background-color: var(--input-bg);
+  color: var(--text-color);
   font-family: inherit;
   border: none;
   border-radius: 10rem;
@@ -66,15 +76,14 @@ input {
 
 .add-form button {
   text-transform: uppercase;
-  background-color: #e44949;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--input-bg);
 }
 
 .list {
-  background-color: #edf7f2;
-  color: #2d2d2d;
+  background-color: var(--list-bg);
+  color: var(--text-color);
   padding: 4rem 0;
-
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -93,7 +102,7 @@ input {
 .list ul {
   list-style: none;
   width: 80%;
-  overflow: scroll;
+  overflow: auto; /* Only show scrollbars when needed */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.2rem;
@@ -110,7 +119,7 @@ input {
 input[type="checkbox"] {
   height: 2rem;
   width: 2rem;
-  accent-color: #d1b29e;
+  accent-color: var(--primary-color);
 }
 
 .list li button {
@@ -123,8 +132,7 @@ input[type="checkbox"] {
 }
 
 .stats {
-  /* background-color: #76c7ad; */
-  background-color: #d1b29e;
+  background-color: var(--secondary-color);
   text-align: center;
   padding: 3.2rem 0;
 }

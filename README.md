@@ -8,7 +8,7 @@ A simple, responsive grocery list application built with React. Manage your groc
 - **Toggle Packed Status:** Mark items as packed or unpacked.
 - **Sort Options:** Sort your list by input order, description, or packed status.
 - **Clear List:** Remove all items from your list with a single click.
-- **Responsive Design:** Works well on desktop, tablet, and smartphone screens.
+- **Responsive Design:** Works well on all screens.
 - **Theme Switching:** Switch between day and night modes for different moods and times of day.
 
 ## Demo

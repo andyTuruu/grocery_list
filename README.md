@@ -1,6 +1,6 @@
 # Grocery List React App
 
-A simple, responsive grocery list application built with React. Manage your grocery items, mark them as packed, sort by various criteria, and clear your list—all in a clean, modern interface.
+A simple, responsive grocery list application. Manage your grocery items, mark them as packed, sort by various criteria, and clear your list—all in a clean, modern interface.
 
 ## Features
 
